@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main() {
+  int sayac;  
+  int not;
+  int toplam;
+  int ortalama;
+  int sayi;
+  toplam = 0;
+  sayac = 1;
+  printf("Kaç sayının ortalanası: ");
+  scanf("%d", &sayi);
+  while (sayac <= sayi) {
+    printf("notu giriniz: ");
+    scanf("%d", &not);
+    toplam = toplam + not;
+   // sayac = sayac + 1;
+    sayac++;
+    ortalama=toplam/sayi;
+  }   
+  printf( "ortalama: %d", ortalama);
+  return 0;
+}
