@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+  int sayac;  
+  int not;
+  int toplam;
+  int ortalama;
+  toplam = 0;
+  sayac = 1;
+  while (sayac <= 10) {
+    printf("notu giriniz: ");
+    scanf("%d", &not);
+    toplam = toplam + not;
+   // sayac = sayac + 1;
+    sayac++;
+    ortalama=toplam/10;
+  }   
+  printf( "ortalama: %d", ortalama);
+  return 0;
+}
