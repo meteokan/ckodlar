@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+  int n, sayac;
+  unsigned long long faktoriyel = 1;
+  printf("Bir sayı giriniz: ");
+  scanf("%d", &n);
+  sayac = 0;
+  if(n<0){
+    printf("Hatalı giriş");
+  }else{
+    for(int sayac=1; sayac<=n; sayac++){
+      faktoriyel *= sayac;//faktoriyel = faktoriyel * sayac
+   }
+    printf("%d! = %llu", n, faktoriyel);
+  }
+  return 0;
+}
